@@ -1,0 +1,10 @@
+pipeline {
+    agent any
+
+        stage('Download Sources') {
+            steps {
+                // Get some code from a GitHub repository
+                git 'https://github.com/DemoKuvasz/demo-upf.git'
+            }
+        }    
+}
