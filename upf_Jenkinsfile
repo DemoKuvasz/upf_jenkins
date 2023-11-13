@@ -1,6 +1,14 @@
+pipeline {
+    agent any
+
+    stages {
+        
         stage('Download Sources') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/DemoKuvasz/demo-upf.git'
+                git 'https://github.com/diegofergordon/kvz-api-bank.git'
             }
-        }    
+        }
+        
+    }
+}
